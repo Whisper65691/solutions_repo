@@ -131,9 +131,7 @@ In this section, we analyze how the **horizontal range** of a projectile depends
 
 The horizontal range $R$ is the distance a projectile travels along the x-axis before hitting the ground. For a projectile launched from height $h_0 = 0$, the range is given by:
 
-$$
-R = \frac{v_0^2 \sin(2\theta)}{g}
-$$
+$$R = \frac{v_0^2 \sin(2\theta)}{g}$$
 
 where:
 - $v_0$ is the initial speed,
@@ -142,13 +140,11 @@ where:
 
 ---
 
-## 2. Dependence on Angle of Projection $ \theta $
+## 2. Dependence on Angle of Projection $\theta$
 
 From the formula:
 
-$$
-R(\theta) = \frac{v_0^2}{g} \sin(2\theta)
-$$
+$$R(\theta) = \frac{v_0^2}{g} \sin(2\theta)$$
 
 ### Key observations:
 - The function $\sin(2\theta)$ reaches its maximum value of 1 when $2\theta = 90^\circ $, i.e.,$\theta = 45^\circ$.
