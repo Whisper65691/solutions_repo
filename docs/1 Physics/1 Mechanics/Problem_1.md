@@ -144,10 +144,10 @@ where:
 
 From the formula:
 
-$$R(\theta) = \frac{v_0^2}{g} \sin(2\theta)$$
+ $$R(\theta) = \frac{v_0^2}{g} \sin(2\theta)$$
 
 ### Key observations:
-- The function $\sin(2\theta)$ reaches its maximum value of 1 when $2\theta = 90^\circ $, i.e.,$\theta = 45^\circ$.
+- The function $\sin(2\theta)$ reaches its maximum value of 1 when $2\theta = 90^\circ $ , i.e., $\theta = 45^\circ$.
 - Therefore, the range is **maximum when the angle of projection is 45°**, assuming level ground and no air resistance.
 - The graph of $R(\theta)$ is **symmetric about 45°**. That is, $R(30^\circ) = R(60^\circ)$, $R(20^\circ) = R(70^\circ)$, and so on.
 
