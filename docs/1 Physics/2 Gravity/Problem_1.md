@@ -184,4 +184,4 @@ We will simulate orbits for different radii and compute the periods numerically,
 
 ## Here is  A Simulation of Circular Orbits and Verification of Kepler's Third Law
 
-grav1.png
+<img src="./grav1.png"/>
