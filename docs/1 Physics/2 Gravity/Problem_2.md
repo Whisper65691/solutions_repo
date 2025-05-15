@@ -147,7 +147,7 @@ Understanding the mathematical foundations and the dependence on physical parame
 | Jupiter        | 42.57                              | 60.20                               |
 
 ## Visualization
-<img src="./FirstandSecond.png"/>
+![image](FirstandSecond.png)
 
 
 # Importance of Cosmic Velocities in Space Exploration
