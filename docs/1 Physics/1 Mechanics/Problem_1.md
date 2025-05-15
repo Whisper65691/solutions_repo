@@ -68,13 +68,13 @@ $$
 
 ## 3. Trajectory Equation
 
-Eliminate $ t $ using:
+Eliminate $t$ using:
 
 $$
 t = \frac{x}{v_0 \cos\theta}
 $$
 
-Substitute into $ y(t) $:
+Substitute into $y(t)$:
 
 $$
 y(x) = -\frac{g x^2}{2 v_0^2 \cos^2\theta} + x \tan\theta + h_0
@@ -86,21 +86,20 @@ This is a parabolic equation.
 
 ## 4. Range of the Projectile
 
-Range $ R $: the horizontal distance when $ y = 0 $
-
+Range $ R $: the horizontal distance when $y = 0$
 Set vertical equation to zero:
 
 $$
 0 = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
 $$
 
-Solve for time of flight $ T $:
+Solve for time of flight $T$:
 
 $$
 \frac{1}{2}gt^2 - v_0 \sin\theta \cdot t - h_0 = 0
 $$
 
-Use positive root $ T $, then compute:
+Use positive root $T$, then compute:
 
 $$
 R = v_0 \cos\theta \cdot T
@@ -117,9 +116,9 @@ Three parameters define the motion:
 - **Launch height $ h_0 $**: Alters flight time and horizontal distance.
 
 By varying these, a family of trajectories emerges:
-- Lower $ \theta $: flatter arcs, shorter airtime.
-- Higher $ v_0 $: longer range, higher apex.
-- Higher $ h_0 $: increased flight duration and range.
+- Lower $\theta$: flatter arcs, shorter airtime.
+- Higher $v_0$: longer range, higher apex.
+- Higher $h_0$: increased flight duration and range.
 
 ---
 # Analysis of the Range in Projectile Motion
@@ -130,16 +129,16 @@ In this section, we analyze how the **horizontal range** of a projectile depends
 
 ## 1. General Formula for Range
 
-The horizontal range $ R $ is the distance a projectile travels along the x-axis before hitting the ground. For a projectile launched from height $ h_0 = 0 $, the range is given by:
+The horizontal range $R$ is the distance a projectile travels along the x-axis before hitting the ground. For a projectile launched from height $h_0 = 0$, the range is given by:
 
 $$
 R = \frac{v_0^2 \sin(2\theta)}{g}
 $$
 
 where:
-- $ v_0 $ is the initial speed,
-- $ \theta $ is the angle of projection,
-- $ g $ is the gravitational acceleration.
+- $v_0$ is the initial speed,
+- $\theta$ is the angle of projection,
+- $g$ is the gravitational acceleration.
 
 ---
 
@@ -152,9 +151,9 @@ R(\theta) = \frac{v_0^2}{g} \sin(2\theta)
 $$
 
 ### Key observations:
-- The function $ \sin(2\theta) $ reaches its maximum value of 1 when $ 2\theta = 90^\circ $, i.e., $ \theta = 45^\circ $.
+- The function $\sin(2\theta)$ reaches its maximum value of 1 when $2\theta = 90^\circ $, i.e.,$\theta = 45^\circ$.
 - Therefore, the range is **maximum when the angle of projection is 45°**, assuming level ground and no air resistance.
-- The graph of $ R(\theta) $ is **symmetric about 45°**. That is, $ R(30^\circ) = R(60^\circ) $, $ R(20^\circ) = R(70^\circ) $, and so on.
+- The graph of $R(\theta)$ is **symmetric about 45°**. That is, $R(30^\circ) = R(60^\circ)$, $R(20^\circ) = R(70^\circ)$, and so on.
 
 ---
 
@@ -166,11 +165,11 @@ $$
 R \propto v_0^2
 $$
 
-Doubling $ v_0 $ results in **four times the range**, assuming $ \theta $ and $ g $ remain constant.
+Doubling $v_0$ results in **four times the range**, assuming $\theta$ and $g$ remain constant.
 
 ---
 
-## 4. Influence of Gravitational Acceleration $ g $
+## 4. Influence of Gravitational Acceleration $g$
 
 Range is **inversely proportional** to gravitational acceleration:
 
@@ -178,20 +177,20 @@ $$
 R \propto \frac{1}{g}
 $$
 
-- On planets with lower gravity (e.g., the Moon), the same projectile launched with the same $ v_0 $ and $ \theta $ will travel **farther**.
+- On planets with lower gravity (e.g., the Moon), the same projectile launched with the same $v_0$ and $\theta$ will travel **farther**.
 - Conversely, on planets with stronger gravity, the range will be **shorter**.
 
 ---
 
 ## 5. Non-Zero Launch Height Case
 
-If the projectile is launched from a height $ h_0 \ne 0 $, the formula becomes more complex. The time of flight $ T $ is found by solving:
+If the projectile is launched from a height $h_0 \ne 0$, the formula becomes more complex. The time of flight $T$ is found by solving:
 
 $$
 y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0 = 0
 $$
 
-Using the positive root of this quadratic gives $ T $, then:
+Using the positive root of this quadratic gives $T$, then:
 
 $$
 R = v_0 \cos\theta \cdot T
@@ -199,7 +198,7 @@ $$
 
 In this case:
 - The maximum range no longer occurs exactly at 45°.
-- It shifts slightly depending on $ h_0 $ and the relative contribution of vertical motion.
+- It shifts slightly depending on $h_0$ and the relative contribution of vertical motion.
 
 ---
 
@@ -207,10 +206,10 @@ In this case:
 
 | Parameter         | Effect on Range                                  |
 |------------------|--------------------------------------------------|
-| Angle $ \theta $ | Maximum range at $ 45^\circ $ (if $ h_0 = 0 $)   |
-| Initial speed $ v_0 $ | $ R \propto v_0^2 $                          |
-| Gravity $ g $     | $ R \propto \frac{1}{g} $                        |
-| Launch height $ h_0 $ | Increases range and shifts optimal angle    |
+| Angle $\theta$ | Maximum range at $45^\circ$ (if $h_0 = 0$)   |
+| Initial speed $v_0$ | $ R \propto v_0^2$                          |
+| Gravity $g$     | $R\propto \frac{1}{g}$                        |
+| Launch height $h_0$ | Increases range and shifts optimal angle    |
 
 ---
 
@@ -224,7 +223,7 @@ While the idealized model of projectile motion assumes a vacuum and level ground
 
 ## 1. Projectiles on Uneven Terrain
 
-In real life, projectiles are rarely launched and land on perfectly flat surfaces. For **uneven terrain**, the landing height differs from the launch height ($ h_0 \ne 0 $).
+In real life, projectiles are rarely launched and land on perfectly flat surfaces. For **uneven terrain**, the landing height differs from the launch height ($h_0 \ne 0$).
 
 ### Adaptation:
 Use the full vertical motion equation:
@@ -233,7 +232,7 @@ $$
 y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
 $$
 
-Set $ y(t) = h_f $ (final height) and solve the resulting quadratic for $ t $. Then compute the range:
+Set $ y(t) = h_f $ (final height) and solve the resulting quadratic for $t$. Then compute the range:
 
 $$
 R = v_0 \cos\theta \cdot t
@@ -288,7 +287,7 @@ These equations usually require **numerical methods** for solutions.
 
 ## 3. Wind and Environmental Effects
 
-Wind adds a horizontal force component, effectively altering $ v_0 \cos\theta $ or even changing direction mid-flight. Temperature and air density can also modify drag forces.
+Wind adds a horizontal force component, effectively altering $v_0 \cos\theta$ or even changing direction mid-flight. Temperature and air density can also modify drag forces.
 
 ### Applications:
 - **Ballistics**: Adjusting fire for crosswinds or atmospheric pressure.
@@ -356,12 +355,12 @@ affect the projectile's range.
 - Gravitational acceleration $g$
 
 ### Approach:
-1. Loop over projection angles $ \theta $ from 1° to 89°.
+1. Loop over projection angles $\theta$ from 1° to 89°.
 2. For each angle:
    - Compute horizontal and vertical velocity components.
-   - Solve for time of flight by setting vertical displacement $ y(t) = 0 $.
+   - Solve for time of flight by setting vertical displacement $y(t) = 0$.
    - Use the positive root of the quadratic equation.
-   - Compute horizontal range: $ R = v_0 \cos\theta \cdot T $.
+   - Compute horizontal range: $R = v_0 \cos\theta \cdot T$.
 3. Plot range as a function of angle.
 
 # Visualizations
