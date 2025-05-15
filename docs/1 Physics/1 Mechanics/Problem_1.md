@@ -232,7 +232,7 @@ $$
 y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
 $$
 
-Set $ y(t) = h_f $ (final height) and solve the resulting quadratic for $t$. Then compute the range:
+Set $y(t) = h_f$ (final height) and solve the resulting quadratic for $t$. Then compute the range:
 
 $$
 R = v_0 \cos\theta \cdot t
@@ -266,15 +266,11 @@ These forces act opposite to the direction of motion and modify the differential
 
 - In the horizontal direction:
 
-  $$
-  m\frac{dv_x}{dt} = -kv_x \quad \Rightarrow \quad v_x(t) = v_{0x} e^{-\frac{k}{m}t}
-  $$
+  $$m\frac{dv_x}{dt} = -kv_x \quad \Rightarrow \quad v_x(t) = v_{0x} e^{-\frac{k}{m}t}$$
 
 - In the vertical direction:
 
-  $$
-  m\frac{dv_y}{dt} = -mg - kv_y
-  $$
+  $$m\frac{dv_y}{dt} = -mg - kv_y$$
 
 These equations usually require **numerical methods** for solutions.
 
