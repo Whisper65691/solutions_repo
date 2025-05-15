@@ -371,3 +371,7 @@ affect the projectile's range.
 <img src="./task2.png"/>
 
 <img src="./task3.png"/>
+
+<img src="./effect of gravitiy.png"/>
+
+<img src="./effect of initail velocity.png"/>
