@@ -153,7 +153,7 @@ From the formula:
 
 ---
 
-## 3. Influence of Initial Velocity $ v_0 $
+## 3. Influence of Initial Velocity $v_0$
 
 Range is **quadratically proportional** to the initial velocity:
 
@@ -203,7 +203,7 @@ In this case:
 | Parameter         | Effect on Range                                  |
 |------------------|--------------------------------------------------|
 | Angle $\theta$ | Maximum range at $45^\circ$ (if $h_0 = 0$)   |
-| Initial speed $v_0$ | $ R \propto v_0^2$                          |
+| Initial speed $v_0$ | $R \propto v_0^2$                          |
 | Gravity $g$     | $R\propto \frac{1}{g}$                        |
 | Launch height $h_0$ | Increases range and shifts optimal angle    |
 
