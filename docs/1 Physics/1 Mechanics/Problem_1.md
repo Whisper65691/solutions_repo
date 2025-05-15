@@ -363,3 +363,11 @@ affect the projectile's range.
    - Use the positive root of the quadratic equation.
    - Compute horizontal range: $ R = v_0 \cos\theta \cdot T $.
 3. Plot range as a function of angle.
+
+# Visualizations
+
+<img src="./task1.png"/>
+
+<img src="./task2.png"/>
+
+<img src="./task3.png"/>
