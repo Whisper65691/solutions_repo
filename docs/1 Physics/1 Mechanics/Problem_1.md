@@ -366,12 +366,12 @@ affect the projectile's range.
 
 # Visualizations
 
-<img src="./task1.png"/>
+![image](task1.png)
 
-<img src="./task2.png"/>
+![image](task2.png)
 
-<img src="./task3.png"/>
+![image](task3.png)
 
-<img src="./effect of gravitiy.png"/>
+![image](task4.png)
 
-<img src="./effect of initail velocity.png"/>
+![image](task5.png)
