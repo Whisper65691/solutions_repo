@@ -172,6 +172,162 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-3">Problem 3</h1>
+<h1 id="possible-trajectories-of-a-payload-released-near-earth">Possible Trajectories of a Payload Released Near Earth</h1>
+<p>When a payload is released from a moving rocket near Earth, its trajectory depends primarily on the initial velocity vector and altitude. The key factor determining the type of orbit or trajectory is the <strong>specific orbital energy</strong> <span class="arithmatex">\(\epsilon\)</span>:</p>
+<div class="arithmatex">\[
+\epsilon = \frac{v^2}{2} - \frac{GM}{r}
+\]</div>
+<p>where<br/>
+- <span class="arithmatex">\(v\)</span> = speed of the payload at release,<br/>
+- <span class="arithmatex">\(r\)</span> = distance from Earth’s center at release,<br/>
+- <span class="arithmatex">\(G\)</span> = gravitational constant,<br/>
+- <span class="arithmatex">\(M\)</span> = Earth’s mass.</p>
+<hr/>
+<h2 id="1-elliptical-orbit-bound-orbit">1. Elliptical Orbit (Bound Orbit)</h2>
+<ul>
+<li>Condition: <span class="arithmatex">\(\epsilon &lt; 0\)</span> </li>
+<li>Interpretation: The payload’s speed is less than escape velocity at that altitude.  </li>
+<li>Result: The payload remains gravitationally bound to Earth, moving in a closed elliptical orbit around Earth.  </li>
+<li>Special case:  </li>
+<li>If the orbit is circular, <span class="arithmatex">\(v = v_{\text{circular}} = \sqrt{\frac{GM}{r}}\)</span>.  </li>
+<li>Most orbits are elliptical with varying eccentricity.</li>
+</ul>
+<hr/>
+<h2 id="2-parabolic-trajectory-escape-condition">2. Parabolic Trajectory (Escape Condition)</h2>
+<ul>
+<li>Condition: <span class="arithmatex">\(\epsilon = 0\)</span> </li>
+<li>Interpretation: The payload has exactly the escape velocity at the release altitude.  </li>
+<li>Result: The trajectory is parabolic — the object barely escapes Earth’s gravity, theoretically never returning but moving away with zero excess speed at infinity.</li>
+</ul>
+<hr/>
+<h2 id="3-hyperbolic-trajectory-unbound-orbit">3. Hyperbolic Trajectory (Unbound Orbit)</h2>
+<ul>
+<li>Condition: <span class="arithmatex">\(\epsilon &gt; 0\)</span> </li>
+<li>Interpretation: The payload’s speed is greater than escape velocity at release.  </li>
+<li>Result: The object escapes Earth’s gravity with excess speed, following a hyperbolic path.  </li>
+<li>This trajectory is typical for interplanetary missions or objects leaving Earth orbit permanently.</li>
+</ul>
+<hr/>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li><strong>Escape velocity</strong> at radius <span class="arithmatex">\(r\)</span> is given by:<br/>
+  $$
+  v_{\text{escape}} = \sqrt{\frac{2GM}{r}}
+  $$</li>
+<li>If released with velocity less than orbital velocity but still above zero, the payload may follow a <strong>suborbital trajectory</strong>, falling back to Earth.</li>
+<li>Real trajectories can be affected by atmospheric drag (especially at low altitudes) and Earth's oblateness or perturbations from other bodies.</li>
+<li>Numerical integration is often required to predict precise trajectories from complex initial conditions.</li>
+</ul>
+<h1 id="numerical-analysis-of-payload-trajectory-near-earth">Numerical Analysis of Payload Trajectory Near Earth</h1>
+<h2 id="problem-setup">Problem Setup</h2>
+<p>We want to compute the trajectory of a payload released from a moving rocket near Earth. The payload’s motion is governed by Newton’s law under Earth's gravity:</p>
+<div class="arithmatex">\[
+\frac{d^2 \mathbf{r}}{dt^2} = -\frac{GM}{r^3} \mathbf{r}
+\]</div>
+<p>where:<br/>
+- <span class="arithmatex">\(\mathbf{r} = (x, y)\)</span> is the position vector from Earth's center,<br/>
+- <span class="arithmatex">\(r = |\mathbf{r}| = \sqrt{x^2 + y^2}\)</span>,<br/>
+- <span class="arithmatex">\(G\)</span> is the gravitational constant,<br/>
+- <span class="arithmatex">\(M\)</span> is the mass of the Earth.</p>
+<h2 id="initial-conditions">Initial Conditions</h2>
+<ul>
+<li>Initial position <span class="arithmatex">\(\mathbf{r}_0 = (x_0, y_0)\)</span>, typically at altitude above Earth's surface.  </li>
+<li>Initial velocity <span class="arithmatex">\(\mathbf{v}_0 = (v_{x0}, v_{y0})\)</span>, inherited from the rocket plus any relative velocity imparted on release.</li>
+</ul>
+<h2 id="numerical-integration-using-rk4-method">Numerical Integration Using RK4 Method</h2>
+<p>We rewrite the 2nd order ODE as a system of first order ODEs:</p>
+<div class="arithmatex">\[
+\frac{d \mathbf{r}}{dt} = \mathbf{v}, \quad
+\frac{d \mathbf{v}}{dt} = -\frac{GM}{r^3} \mathbf{r}
+\]</div>
+<h1 id="relationship-between-trajectories-and-space-mission-scenarios">Relationship Between Trajectories and Space Mission Scenarios</h1>
+<p>When a payload is released near Earth, the nature of its trajectory—elliptical, parabolic, or hyperbolic—directly influences mission outcomes such as orbital insertion, reentry, or escape. Understanding this connection is key for mission planning.</p>
+<hr/>
+<h2 id="1-elliptical-orbits-and-orbital-insertion">1. Elliptical Orbits and Orbital Insertion</h2>
+<ul>
+<li><strong>Trajectory Type:</strong> Bound, closed elliptical orbits (<span class="arithmatex">\(\epsilon &lt; 0\)</span>)  </li>
+<li><strong>Scenario:</strong> Payload achieves sufficient velocity and altitude to enter a stable orbit around Earth.  </li>
+<li><strong>Mission Relevance:</strong> </li>
+<li><strong>Orbital insertion</strong> requires the payload to be accelerated to near circular velocity for the desired altitude.  </li>
+<li>Satellites and space stations use elliptical orbits as intermediate or operational orbits.  </li>
+<li>Adjustments via propulsion (orbital maneuvers) can circularize or raise/lower orbits.  </li>
+<li><strong>Example:</strong> Releasing a satellite from the rocket at the right velocity vector to achieve a long-lasting orbit.</li>
+</ul>
+<hr/>
+<h2 id="2-parabolic-trajectories-and-escape-conditions">2. Parabolic Trajectories and Escape Conditions</h2>
+<ul>
+<li><strong>Trajectory Type:</strong> Marginal escape path (<span class="arithmatex">\(\epsilon = 0\)</span>)  </li>
+<li><strong>Scenario:</strong> Payload has exactly escape velocity, moving on a parabolic path.  </li>
+<li><strong>Mission Relevance:</strong> </li>
+<li>Represents the boundary between bound orbits and escape trajectories.  </li>
+<li>Rarely targeted in missions because any small velocity increase leads to hyperbolic escape.  </li>
+<li>Useful for theoretical studies of escape velocity.  </li>
+<li><strong>Example:</strong> An object released at escape velocity moves away from Earth without returning but with zero excess speed at infinity.</li>
+</ul>
+<hr/>
+<h2 id="3-hyperbolic-trajectories-and-escape-missions">3. Hyperbolic Trajectories and Escape Missions</h2>
+<ul>
+<li><strong>Trajectory Type:</strong> Unbound, open hyperbolic paths (<span class="arithmatex">\(\epsilon &gt; 0\)</span>)  </li>
+<li><strong>Scenario:</strong> Payload exceeds escape velocity and leaves Earth’s gravitational influence.  </li>
+<li><strong>Mission Relevance:</strong> </li>
+<li>Essential for <strong>interplanetary missions</strong> or probes leaving Earth orbit for other bodies.  </li>
+<li>Requires higher initial velocity, often via multi-stage rockets or gravity assists.  </li>
+<li>The payload has excess kinetic energy beyond what’s needed to just escape Earth.  </li>
+<li><strong>Example:</strong> Voyager probes, missions to Mars or beyond use hyperbolic escape trajectories.</li>
+</ul>
+<hr/>
+<h2 id="4-suborbital-trajectories-and-reentry">4. Suborbital Trajectories and Reentry</h2>
+<ul>
+<li><strong>Trajectory Type:</strong> Velocity less than orbital, but not zero (suborbital)  </li>
+<li><strong>Scenario:</strong> Payload does not achieve orbital velocity and returns to Earth on a ballistic path.  </li>
+<li><strong>Mission Relevance:</strong> </li>
+<li>Used for sounding rockets, reentry capsules, or testing payloads.  </li>
+<li>Payload experiences atmospheric reentry and landing procedures.  </li>
+<li>Careful trajectory planning is needed to control landing zone and heat loads.  </li>
+<li><strong>Example:</strong> Capsules returning from orbit or suborbital test flights.</li>
+</ul>
+<hr/>
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Trajectory Type</th>
+<th>Specific Energy <span class="arithmatex">\(\epsilon\)</span></th>
+<th>Mission Scenario</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elliptical Orbit</td>
+<td><span class="arithmatex">\(\epsilon &lt; 0\)</span></td>
+<td>Orbital insertion</td>
+<td>Stable orbit, payload remains bound</td>
+</tr>
+<tr>
+<td>Parabolic Trajectory</td>
+<td><span class="arithmatex">\(\epsilon = 0\)</span></td>
+<td>Marginal escape</td>
+<td>Exactly escape velocity, theoretical case</td>
+</tr>
+<tr>
+<td>Hyperbolic Trajectory</td>
+<td><span class="arithmatex">\(\epsilon &gt; 0\)</span></td>
+<td>Escape from Earth</td>
+<td>Payload leaves Earth gravity permanently</td>
+</tr>
+<tr>
+<td>Suborbital Trajectory</td>
+<td>Velocity <span class="arithmatex">\(&lt;\)</span> orbital speed</td>
+<td>Reentry and testing</td>
+<td>Payload falls back to Earth</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p>Understanding these relationships allows mission planners to tailor release velocities and angles, ensuring the payload follows the desired trajectory to meet mission goals.</p>
+<hr/>
+<h1 id="computational-tool-to-simulate-payload-motion-under-earths-gravity">Computational Tool to Simulate Payload Motion Under Earth's Gravity</h1>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

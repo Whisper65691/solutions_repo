@@ -172,6 +172,146 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h1 id="cosmic-velocities-definitions-and-physical-meaning">Cosmic Velocities: Definitions and Physical Meaning</h1>
+<p>Understanding the cosmic velocities is essential for grasping how objects move in and beyond the gravitational field of a celestial body such as Earth. These velocities determine whether an object will orbit the planet, escape its gravity, or even leave the gravitational influence of the entire solar system.</p>
+<h2 id="1-first-cosmic-velocity-orbital-velocity">1. First Cosmic Velocity (Orbital Velocity)</h2>
+<ul>
+<li><strong>Definition</strong>: The minimum velocity required for an object to enter a stable circular orbit around a celestial body just above its surface.</li>
+<li><strong>Formula</strong>:<br/>
+  $$
+  v_1 = \sqrt{\frac{GM}{R}}
+  $$
+  where:</li>
+<li>$ G $ is the gravitational constant,</li>
+<li>$ M $ is the mass of the celestial body,</li>
+<li>
+<p>$ R $ is the radius of the body.</p>
+</li>
+<li>
+<p><strong>Physical Meaning</strong>: At this speed, an object does not fall back to the planet because the gravitational pull is perfectly balanced by the centrifugal force of the circular motion. For Earth, this velocity is approximately <strong>7.9 km/s</strong>.</p>
+</li>
+</ul>
+<h2 id="2-second-cosmic-velocity-escape-velocity">2. Second Cosmic Velocity (Escape Velocity)</h2>
+<ul>
+<li><strong>Definition</strong>: The minimum velocity required to escape the gravitational field of a celestial body without further propulsion.</li>
+<li>
+<p><strong>Formula</strong>:<br/>
+  $$
+  v_2 = \sqrt{2} \cdot v_1 = \sqrt{\frac{2GM}{R}}
+  $$</p>
+</li>
+<li>
+<p><strong>Physical Meaning</strong>: At this speed, an object overcomes the gravitational pull completely and moves away into space without falling back. For Earth, this velocity is approximately <strong>11.2 km/s</strong>.</p>
+</li>
+</ul>
+<h2 id="3-third-cosmic-velocity-heliocentric-escape-velocity">3. Third Cosmic Velocity (Heliocentric Escape Velocity)</h2>
+<ul>
+<li><strong>Definition</strong>: The minimum velocity required to escape the gravitational influence of the Sun, starting from the Earth's orbit.</li>
+<li>
+<p><strong>Formula</strong> (approximate, depends on initial position and velocity relative to the Sun):<br/>
+  $$
+  v_3 \approx 16.7 \, \text{km/s} \text{ (relative to the Sun)}
+  $$</p>
+</li>
+<li>
+<p><strong>Physical Meaning</strong>: This is the speed needed for a spacecraft to leave the solar system entirely, escaping the Sun's gravitational influence. It is relevant for interstellar missions such as Voyager 1 and 2.</p>
+</li>
+</ul>
+<hr/>
+<p>These cosmic velocities form the theoretical foundation for space missions, satellite deployment, and long-distance interplanetary and interstellar exploration.</p>
+<h1 id="mathematical-analysis-of-cosmic-velocities">Mathematical Analysis of Cosmic Velocities</h1>
+<p>The three cosmic velocities are derived from classical mechanics and Newtonian gravity. Each velocity depends on fundamental parameters such as the gravitational constant ($ G <span class="arithmatex">\(), the mass of the celestial body (\)</span> M <span class="arithmatex">\(), and the radial distance (\)</span> R $) from its center.</p>
+<hr/>
+<h2 id="1-first-cosmic-velocity-orbital-velocity_1">1. First Cosmic Velocity (Orbital Velocity)</h2>
+<h3 id="derivation">Derivation:</h3>
+<p>An object in a stable circular orbit experiences a centripetal force provided by gravity:</p>
+<div class="arithmatex">\[
+\frac{mv^2}{R} = \frac{GMm}{R^2}
+\]</div>
+<p>Canceling $ m $ and solving for $ v $:</p>
+<div class="arithmatex">\[
+v_1 = \sqrt{\frac{GM}{R}}
+\]</div>
+<h3 id="parameters-affecting-v_1">Parameters Affecting $ v_1 $:</h3>
+<ul>
+<li><strong>$ G $</strong>: Universal constant, does not vary.</li>
+<li><strong>$ M $</strong>: A more massive body (like Jupiter) increases $ v_1 $.</li>
+<li><strong>$ R $</strong>: A higher orbit (larger $ R $) decreases $ v_1 $.</li>
+</ul>
+<hr/>
+<h2 id="2-second-cosmic-velocity-escape-velocity_1">2. Second Cosmic Velocity (Escape Velocity)</h2>
+<h3 id="derivation_1">Derivation:</h3>
+<p>Escape velocity is found by equating kinetic energy to gravitational potential energy:</p>
+<div class="arithmatex">\[
+\frac{1}{2}mv^2 = \frac{GMm}{R}
+\]</div>
+<p>Solving for $ v $:</p>
+<div class="arithmatex">\[
+v_2 = \sqrt{\frac{2GM}{R}} = \sqrt{2} \cdot v_1
+\]</div>
+<h3 id="parameters-affecting-v_2">Parameters Affecting $ v_2 $:</h3>
+<ul>
+<li>Directly depends on $ M $ and inversely on $ R $.</li>
+<li>Does <strong>not</strong> depend on the mass of the escaping object ($ m $ cancels out).</li>
+<li>A denser planet (larger $ M $, smaller $ R $) yields a higher $ v_2 $.</li>
+</ul>
+<hr/>
+<h2 id="3-third-cosmic-velocity-heliocentric-escape-velocity_1">3. Third Cosmic Velocity (Heliocentric Escape Velocity)</h2>
+<h3 id="conceptual-derivation">Conceptual Derivation:</h3>
+<p>To escape the solar system, a spacecraft must overcome the Sun’s gravity from Earth's orbital distance. Starting from the Sun's gravitational potential:</p>
+<div class="arithmatex">\[
+v_3 = \sqrt{\frac{2GM_{\odot}}{r_{\text{Earth}}}} \approx 42.1 \, \text{km/s}
+\]</div>
+<p>However, Earth already moves at $ v_E \approx 29.8 \, \text{km/s} $ around the Sun. Therefore, the additional velocity needed from Earth’s surface is:</p>
+<div class="arithmatex">\[
+v_3 = \sqrt{v_{\text{esc}}^2 + v_{\infty}^2}
+\]</div>
+<p>Where $ v_{\text{esc}} \approx 11.2 \, \text{km/s} $ (from Earth) and $ v_{\infty} $ is the excess velocity at infinity required to escape the Sun.</p>
+<h3 id="approximate-result">Approximate Result:</h3>
+<div class="arithmatex">\[
+v_3 \approx 16.7 \, \text{km/s}
+\]</div>
+<p>(from Earth's surface, considering Earth’s orbital contribution).</p>
+<h3 id="parameters-affecting-v_3">Parameters Affecting $ v_3 $:</h3>
+<ul>
+<li><strong>$ M_{\odot} $</strong> (mass of the Sun): Directly increases $ v_3 $.</li>
+<li><strong>$ r_{\text{Earth}} $</strong>: Distance from the Sun; farther planets need less additional speed to escape the solar system.</li>
+<li><strong>Initial velocity relative to the Sun</strong> (e.g., via gravitational slingshot) can reduce the fuel required to reach $ v_3 $.</li>
+</ul>
+<hr/>
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Velocity</th>
+<th>Formula</th>
+<th>Depends On</th>
+<th>Earth Value (approx.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ v_1 $</td>
+<td>$ \sqrt{\frac{GM}{R}} $</td>
+<td>$ G $, $ M $, $ R $</td>
+<td>7.9 km/s</td>
+</tr>
+<tr>
+<td>$ v_2 $</td>
+<td>$ \sqrt{\frac{2GM}{R}} $</td>
+<td>$ G $, $ M $, $ R $</td>
+<td>11.2 km/s</td>
+</tr>
+<tr>
+<td>$ v_3 $</td>
+<td><em>Complex; solar system escape</em></td>
+<td>$ G $, $ M_{\odot} $, $ r $</td>
+<td>16.7 km/s</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p>Understanding the mathematical foundations and the dependence on physical parameters allows for the precise planning of space missions, efficient fuel usage, and exploration beyond Earth orbit.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
