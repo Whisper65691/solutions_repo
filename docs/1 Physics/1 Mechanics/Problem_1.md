@@ -111,9 +111,9 @@ $$
 
 Three parameters define the motion:
 
-- **Initial velocity $ v_0 $**: Affects height, range, and time.
-- **Angle of projection $ \theta $**: Controls the division between horizontal and vertical speeds.
-- **Launch height $ h_0 $**: Alters flight time and horizontal distance.
+- **Initial velocity $v_0$**: Affects height, range, and time.
+- **Angle of projection $\theta$**: Controls the division between horizontal and vertical speeds.
+- **Launch height $h_0$**: Alters flight time and horizontal distance.
 
 By varying these, a family of trajectories emerges:
 - Lower $\theta$: flatter arcs, shorter airtime.
