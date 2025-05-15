@@ -9,7 +9,7 @@ Projectile motion, governed by Newtonian mechanics, offers an ideal framework to
 
 - No air resistance.
 - Two-dimensional motion: horizontal (x) and vertical (y).
-- Constant gravitational acceleration $ g $, directed downward.
+- Constant gravitational acceleration $g$, directed downward.
 
 ---
 
@@ -374,4 +374,4 @@ affect the projectile's range.
 
 ![image](task4.png)
 
-![image](task5.png)
+![image](task5.png) 
