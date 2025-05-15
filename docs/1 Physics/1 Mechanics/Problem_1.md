@@ -86,7 +86,7 @@ This is a parabolic equation.
 
 ## 4. Range of the Projectile
 
-Range $ R $: the horizontal distance when $y = 0$
+Range $R$: the horizontal distance when $y = 0$
 Set vertical equation to zero:
 
 $$
