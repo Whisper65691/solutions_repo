@@ -1,3 +1,5 @@
+# Problem 1
+
 # Derivation of Kepler's Third Law for Circular Orbits
 
 Kepler's Third Law states that the square of the orbital period of a planet is proportional to the cube of the semi-major axis (orbital radius for circular orbits). We derive this relationship using Newtonian mechanics.
@@ -20,7 +22,7 @@ Where:
 
 ##  Simplify the Equation
 
-Canceling $m$ from both sides:
+Canceling $ m $ from both sides:
 
 $$
 \frac{G M}{r^2} = \frac{v^2}{r}
