@@ -64,9 +64,9 @@ $$
 v_1 = \sqrt{\frac{GM}{R}}
 $$
 
-### Parameters Affecting $ v_1 $:
+### Parameters Affecting $v_1$:
 - **$G$**: Universal constant, does not vary.
-- **$M$**: A more massive body (like Jupiter) increases $ v_1 $.
+- **$M$**: A more massive body (like Jupiter) increases $v_1$.
 - **$R$**: A higher orbit (larger $R$) decreases $v_1$.
 
 ---
@@ -121,7 +121,7 @@ $$
 (from Earth's surface, considering Earth’s orbital contribution).
 
 ### Parameters Affecting $v_3$:
-- **$M_{\odot}$** (mass of the Sun): Directly increases $ v_3 $.
+- **$M_{\odot}$** (mass of the Sun): Directly increases $v_3$.
 - **$r_{\text{Earth}}$**: Distance from the Sun; farther planets need less additional speed to escape the solar system.
 - **Initial velocity relative to the Sun** (e.g., via gravitational slingshot) can reduce the fuel required to reach $v_3$.
 
