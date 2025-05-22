@@ -335,4 +335,3 @@ affect the projectile's range.
 
 ![image](task4.png)
 
-![image](task5.png) 
