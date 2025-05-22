@@ -284,3 +284,42 @@ We will use the **Runge-Kutta** method to solve the system of second-order diffe
 - **Poincaré sections**: These will help detect **chaotic behavior** by plotting a discrete set of points at regular intervals of the driving force period.
 
 ---
+### Pure Pendulum (No Damping, No Forcing)
+
+Regular periodic motion (simple harmonic for small angles).
+
+Closed loop in the phase diagram.
+
+![image](Pendulum.png)
+
+### Damped Pendulum (Damping, No Forcing)
+
+Oscillations gradually decay to equilibrium.
+
+Spiral trajectory in the phase diagram.
+
+![image](Pendulum2.png)
+
+### Driven Pendulum (Forcing, No Damping)
+
+Energy input keeps the system in sustained oscillation.
+
+Rich structure in phase space; potential for complexity depending on parameters.
+
+![image](Pendulum3.png)
+
+### Forced Damped Pendulum (Chaotic Regime):
+
+Aperiodic, sensitive to initial conditions.
+
+Complex, non-repeating trajectory in phase space.
+
+![image](Pendulum4.png)
+
+### Forced Damped Pendulum (Resonant Regime):
+
+Large amplitude, synchronized with driving force.
+
+Regular phase diagram, possibly with stable limit cycles.
+
+![image](Pendulum5.png)
