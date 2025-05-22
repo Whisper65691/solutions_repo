@@ -153,7 +153,7 @@ Understanding these relationships allows mission planners to tailor release velo
 
 ---
 
-# 🚀 Three Cosmic Velocities: Summary
+#  Three Cosmic Velocities: Summary
 
 ## 1. Velocity Table
 
