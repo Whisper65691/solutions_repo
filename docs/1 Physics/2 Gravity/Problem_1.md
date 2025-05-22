@@ -4,7 +4,7 @@ Kepler's Third Law states that the square of the orbital period of a planet is p
 
 ---
 
-## Step 1: Equating Gravitational Force and Centripetal Force
+##  Equating Gravitational Force and Centripetal Force
 
 For a small body of mass $m$ orbiting a much larger body of mass $M$ in a circular orbit of radius $r$:
 
@@ -20,7 +20,7 @@ Where:
 
 ---
 
-## Step 2: Simplify the Equation
+##  Simplify the Equation
 
 Canceling $m$ from both sides:
 
@@ -31,7 +31,7 @@ $$
 
 ---
 
-## Step 3: Express Orbital Period in Terms of Velocity
+##  Express Orbital Period in Terms of Velocity
 
 The orbital period $T$ is:
 
@@ -47,7 +47,7 @@ $$
 
 ---
 
-## Step 4: Simplify and Solve for $T^2$
+##  Simplify and Solve for $T^2$
 
 $$
 \frac{4\pi^2 r^2}{T^2} = \frac{G M}{r}
