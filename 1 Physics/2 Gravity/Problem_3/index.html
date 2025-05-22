@@ -327,7 +327,132 @@
 <hr/>
 <p>Understanding these relationships allows mission planners to tailor release velocities and angles, ensuring the payload follows the desired trajectory to meet mission goals.</p>
 <hr/>
-<h1 id="computational-tool-to-simulate-payload-motion-under-earths-gravity">Computational Tool to Simulate Payload Motion Under Earth's Gravity</h1>
+<h1 id="three-cosmic-velocities-summary">🚀 Three Cosmic Velocities: Summary</h1>
+<h2 id="1-velocity-table">1. Velocity Table</h2>
+<table>
+<thead>
+<tr>
+<th>Velocity Type</th>
+<th>Formula</th>
+<th>Earth (km/s)</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1st Cosmic Velocity</strong> (Orbital)</td>
+<td>$$ v_1 = \sqrt{\frac{GM}{R}} $$</td>
+<td><strong>7.91 km/s</strong></td>
+<td>Achieve <strong>low Earth orbit (LEO)</strong>; e.g., satellites like the ISS</td>
+</tr>
+<tr>
+<td><strong>2nd Cosmic Velocity</strong> (Escape Earth)</td>
+<td>$$ v_2 = \sqrt{2} \cdot v_1 $$</td>
+<td><strong>11.2 km/s</strong></td>
+<td>Escape <strong>Earth’s gravity</strong>; e.g., Apollo missions, lunar probes</td>
+</tr>
+<tr>
+<td><strong>3rd Cosmic Velocity</strong> (Escape Sun)</td>
+<td>$$ v_3 = \sqrt{\frac{2GM_\odot}{r_{\text{Earth}}}} $$</td>
+<td><strong>42.1 km/s</strong></td>
+<td>Escape <strong>Solar System</strong> from Earth’s orbit; e.g., Voyager missions</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="2-planetary-comparison">2. Planetary Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Body</th>
+<th>Radius (km)</th>
+<th>Mass (kg)</th>
+<th>1st Cosmic (km/s)</th>
+<th>2nd Cosmic (km/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Earth</td>
+<td>6371</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(5.97 \times 10^{24}\)</span>\)</span></td>
+<td>7.91</td>
+<td>11.2</td>
+</tr>
+<tr>
+<td>Moon</td>
+<td>1737</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(7.35 \times 10^{22}\)</span>\)</span></td>
+<td>1.68</td>
+<td>2.38</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>3390</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(6.42 \times 10^{23}\)</span>\)</span></td>
+<td>3.55</td>
+<td>5.03</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>69911</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(1.90 \times 10^{27}\)</span>\)</span></td>
+<td>42.1</td>
+<td>59.5</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="3-use-case-summary">3. Use Case Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Mission Goal</th>
+<th>Required Velocity</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Put satellite in Earth orbit</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v &gt; v_1 \approx 7.91\)</span>\)</span> km/s</td>
+<td>Needed for artificial satellites, space stations</td>
+</tr>
+<tr>
+<td>Send probe to Moon or Mars</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v &gt; v_2 \approx 11.2\)</span>\)</span> km/s</td>
+<td>Needed to escape Earth’s gravity</td>
+</tr>
+<tr>
+<td>Leave Solar System</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v &gt; v_3 \approx 42.1\)</span>\)</span> km/s</td>
+<td>Spacecraft like <strong>Voyager 1 &amp; 2</strong> use gravity assists</td>
+</tr>
+<tr>
+<td>Land and return from the Moon</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v_2 \approx 2.38\)</span>\)</span> km/s</td>
+<td>Easier due to Moon’s lower gravity</td>
+</tr>
+<tr>
+<td>Enter low Mars orbit</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v_1 \approx 3.55\)</span>\)</span> km/s</td>
+<td>For satellites like <strong>Mars Reconnaissance Orbiter</strong></td>
+</tr>
+<tr>
+<td>Return from Jupiter mission</td>
+<td><span class="arithmatex">\(<span class="arithmatex">\(v_2 \approx 59.5\)</span>\)</span> km/s</td>
+<td>Requires <strong>multiple gravity assists</strong> to overcome strong gravity</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h3 id="some-visuals">Some visuals</h3>
+<h4 id="projectile-trajectories-from-800-km-altitude">Projectile Trajectories from 800 km Altitude</h4>
+<p><img alt="image" src="../Payloadtraject.png"/></p>
+<h4 id="show-effect-of-angle-on-trajectory">Show effect of angle on trajectory</h4>
+<p><img alt="image" src="../Trajectorydif.png"/></p>
+<h4 id="compare-escape-vs-non-escape-velocities">Compare Escape vs Non-Escape Velocities</h4>
+<p><img alt="image" src="../TrajectBelow.png"/></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
