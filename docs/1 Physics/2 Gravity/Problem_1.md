@@ -11,10 +11,10 @@ For a small body of mass $m$ orbiting a much larger body of mass $M$ in a circul
 $$\frac{G M m}{r^2} = \frac{m v^2}{r}$$
 
 Where:
-- $G$: Gravitational constant
-- $v$: Orbital speed
-- $m$: Mass of the orbiting body (cancels out)
-- $M$: Mass of the central object
+- $ G $: Gravitational constant
+- $ v $: Orbital speed
+- $ m $: Mass of the orbiting body (cancels out)
+- $ M $: Mass of the central object
 
 ---
 
