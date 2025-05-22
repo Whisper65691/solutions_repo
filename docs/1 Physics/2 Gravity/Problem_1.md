@@ -8,9 +8,7 @@ Kepler's Third Law states that the square of the orbital period of a planet is p
 
 For a small body of mass $m$ orbiting a much larger body of mass $M$ in a circular orbit of radius $r$:
 
-$$
-\frac{G M m}{r^2} = \frac{m v^2}{r}
-$$
+$$\frac{G M m}{r^2} = \frac{m v^2}{r}$$
 
 Where:
 - $G$: Gravitational constant

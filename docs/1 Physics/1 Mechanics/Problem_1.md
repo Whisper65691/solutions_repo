@@ -56,13 +56,9 @@ $$
 
 Integrate:
 
-$$
-\frac{dy}{dt} = -gt + v_{0y} = -gt + v_0 \sin\theta
-$$
+$$\frac{dy}{dt} = -gt + v_{0y} = -gt + v_0 \sin\theta$$
 
-$$
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-$$
+$$y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0$$
 
 ---
 
@@ -70,15 +66,11 @@ $$
 
 Eliminate $t$ using:
 
-$$
-t = \frac{x}{v_0 \cos\theta}
-$$
+$$t = \frac{x}{v_0 \cos\theta}$$
 
 Substitute into $y(t)$:
 
-$$
-y(x) = -\frac{g x^2}{2 v_0^2 \cos^2\theta} + x \tan\theta + h_0
-$$
+$$y(x) = -\frac{g x^2}{2 v_0^2 \cos^2\theta} + x \tan\theta + h_0$$
 
 This is a parabolic equation.
 
@@ -89,21 +81,15 @@ This is a parabolic equation.
 Range $R$: the horizontal distance when $y = 0$
 Set vertical equation to zero:
 
-$$
-0 = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-$$
+$$0 = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0$$
 
 Solve for time of flight $T$:
 
-$$
-\frac{1}{2}gt^2 - v_0 \sin\theta \cdot t - h_0 = 0
-$$
+$$\frac{1}{2}gt^2 - v_0 \sin\theta \cdot t - h_0 = 0$$
 
 Use positive root $T$, then compute:
 
-$$
-R = v_0 \cos\theta \cdot T
-$$
+$$R = v_0 \cos\theta \cdot T$$
 
 ---
 
@@ -157,9 +143,7 @@ From the formula:
 
 Range is **quadratically proportional** to the initial velocity:
 
-$$
-R \propto v_0^2
-$$
+$$R \propto v_0^2$$
 
 Doubling $v_0$ results in **four times the range**, assuming $\theta$ and $g$ remain constant.
 
@@ -169,9 +153,7 @@ Doubling $v_0$ results in **four times the range**, assuming $\theta$ and $g$ re
 
 Range is **inversely proportional** to gravitational acceleration:
 
-$$
-R \propto \frac{1}{g}
-$$
+$$R \propto \frac{1}{g}$$
 
 - On planets with lower gravity (e.g., the Moon), the same projectile launched with the same $v_0$ and $\theta$ will travel **farther**.
 - Conversely, on planets with stronger gravity, the range will be **shorter**.
@@ -182,15 +164,11 @@ $$
 
 If the projectile is launched from a height $h_0 \ne 0$, the formula becomes more complex. The time of flight $T$ is found by solving:
 
-$$
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0 = 0
-$$
+$$y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0 = 0$$
 
 Using the positive root of this quadratic gives $T$, then:
 
-$$
-R = v_0 \cos\theta \cdot T
-$$
+$$R = v_0 \cos\theta \cdot T$$
 
 In this case:
 - The maximum range no longer occurs exactly at 45°.
@@ -224,15 +202,11 @@ In real life, projectiles are rarely launched and land on perfectly flat surface
 ### Adaptation:
 Use the full vertical motion equation:
 
-$$
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-$$
+$$y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0$$
 
 Set $y(t) = h_f$ (final height) and solve the resulting quadratic for $t$. Then compute the range:
 
-$$
-R = v_0 \cos\theta \cdot t
-$$
+$$R = v_0 \cos\theta \cdot t$$
 
 ### Applications:
 - **Mountainous warfare**: Artillery fired from or into elevated terrain.
@@ -248,15 +222,11 @@ Air resistance (drag) significantly alters projectile behavior, especially at hi
 ### Drag Force Model:
 A common linear approximation for low-speed motion:
 
-$$
-F_{\text{drag}} = -kv
-$$
+$$F_{\text{drag}} = -kv$$
 
 Or for higher speeds (quadratic drag):
 
-$$
-F_{\text{drag}} = -kv^2
-$$
+$$F_{\text{drag}} = -kv^2$$
 
 These forces act opposite to the direction of motion and modify the differential equations:
 

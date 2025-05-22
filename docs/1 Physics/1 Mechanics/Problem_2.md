@@ -6,9 +6,7 @@
 
 The motion of a forced damped pendulum is described by the nonlinear differential equation:
 
-$$
-\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \sin\theta = A \cos(\omega t)
-$$
+$$\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \sin\theta = A \cos(\omega t)$$
 
 Where:
 - $\theta(t)$: Angular displacement
@@ -23,15 +21,11 @@ Where:
 
 For small angles ($\theta \ll 1$), we use the approximation:
 
-$$
-\sin\theta \approx \theta
-$$
+$$\sin\theta \approx \theta$$
 
 This linearizes the equation:
 
-$$
-\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\omega t)
-$$
+$$\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\omega t)$$
 
 This is the standard form of a **driven damped harmonic oscillator**.
 
@@ -41,21 +35,15 @@ This is the standard form of a **driven damped harmonic oscillator**.
 
 Assume a steady-state solution of the form:
 
-$$
-\theta(t) = B \cos(\omega t - \delta)
-$$
+$$\theta(t) = B \cos(\omega t - \delta)$$
 
 Substituting into the linearized equation gives the amplitude:
 
-$$
-B(\omega) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (\gamma \omega)^2}}
-$$
+$$B(\omega) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (\gamma \omega)^2}}$$
 
 And the phase lag:
 
-$$
-\tan\delta = \frac{\gamma \omega}{\omega_0^2 - \omega^2}
-$$
+$$\tan\delta = \frac{\gamma \omega}{\omega_0^2 - \omega^2}$$
 
 ---
 
@@ -65,9 +53,7 @@ $$
 
 Resonance occurs when the response amplitude is maximized:
 
-$$
-\omega_{\text{res}} = \sqrt{\omega_0^2 - \frac{\gamma^2}{2}}
-$$
+$$\omega_{\text{res}} = \sqrt{\omega_0^2 - \frac{\gamma^2}{2}}$$
 
 - For weak damping ($\gamma \ll \omega_0$), $\omega_{\text{res}} \approx \omega_0$
 - At resonance, the system absorbs energy most efficiently from the driving force
@@ -76,9 +62,7 @@ $$
 
 The average energy stored in the pendulum is proportional to:
 
-$$
-\langle E \rangle \propto B^2(\omega)
-$$
+$$\langle E \rangle \propto B^2(\omega)$$
 
 - **Maximum energy** occurs near the resonance frequency
 - **Damping** prevents runaway energy growth and stabilizes the system
