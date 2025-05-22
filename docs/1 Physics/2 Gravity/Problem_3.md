@@ -153,4 +153,55 @@ Understanding these relationships allows mission planners to tailor release velo
 
 ---
 
-# Computational Tool to Simulate Payload Motion Under Earth's Gravity
+# 🚀 Three Cosmic Velocities: Summary
+
+## 1. Velocity Table
+
+| Velocity Type                     | Formula                                   | Earth (km/s) | Use Case                                                           |
+|----------------------------------|--------------------------------------------|--------------|--------------------------------------------------------------------|
+| **1st Cosmic Velocity** (Orbital)     | $$ v_1 = \sqrt{\frac{GM}{R}} $$              | **7.91 km/s** | Achieve **low Earth orbit (LEO)**; e.g., satellites like the ISS    |
+| **2nd Cosmic Velocity** (Escape Earth) | $$ v_2 = \sqrt{2} \cdot v_1 $$                 | **11.2 km/s** | Escape **Earth’s gravity**; e.g., Apollo missions, lunar probes     |
+| **3rd Cosmic Velocity** (Escape Sun)  | $$ v_3 = \sqrt{\frac{2GM_\odot}{r_{\text{Earth}}}} $$ | **42.1 km/s** | Escape **Solar System** from Earth’s orbit; e.g., Voyager missions  |
+
+---
+
+## 2. Planetary Comparison
+
+| Body     | Radius (km) | Mass (kg)             | 1st Cosmic (km/s) | 2nd Cosmic (km/s) |
+|----------|-------------|------------------------|-------------------|-------------------|
+| Earth    | 6371        | $$5.97 \times 10^{24}$$ | 7.91              | 11.2              |
+| Moon     | 1737        | $$7.35 \times 10^{22}$$ | 1.68              | 2.38              |
+| Mars     | 3390        | $$6.42 \times 10^{23}$$ | 3.55              | 5.03              |
+| Jupiter  | 69911       | $$1.90 \times 10^{27}$$ | 42.1              | 59.5              |
+
+---
+
+## 3. Use Case Summary
+
+| Mission Goal                        | Required Velocity         | Explanation                                                       |
+|------------------------------------|---------------------------|-------------------------------------------------------------------|
+| Put satellite in Earth orbit       | $$v > v_1 \approx 7.91$$ km/s | Needed for artificial satellites, space stations                  |
+| Send probe to Moon or Mars         | $$v > v_2 \approx 11.2$$ km/s | Needed to escape Earth’s gravity                                 |
+| Leave Solar System                 | $$v > v_3 \approx 42.1$$ km/s | Spacecraft like **Voyager 1 & 2** use gravity assists             |
+| Land and return from the Moon      | $$v_2 \approx 2.38$$ km/s   | Easier due to Moon’s lower gravity                               |
+| Enter low Mars orbit               | $$v_1 \approx 3.55$$ km/s   | For satellites like **Mars Reconnaissance Orbiter**              |
+| Return from Jupiter mission        | $$v_2 \approx 59.5$$ km/s   | Requires **multiple gravity assists** to overcome strong gravity |
+
+---
+
+### Some visuals
+
+#### Projectile Trajectories from 800 km Altitude
+
+![image](Payloadtraject.png)
+
+#### Show effect of angle on trajectory
+
+![image](Trajectorydif.png)
+
+#### Compare Escape vs Non-Escape Velocities
+
+![image](TrajectBelow.png)
+
+
+
