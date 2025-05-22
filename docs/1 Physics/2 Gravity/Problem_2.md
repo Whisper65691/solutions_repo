@@ -12,9 +12,9 @@ Understanding the cosmic velocities is essential for grasping how objects move i
   v_1 = \sqrt{\frac{GM}{R}}
   $$
   where:
-  - $ G $ is the gravitational constant,
-  - $ M $ is the mass of the celestial body,
-  - $ R $ is the radius of the body.
+  - $G$ is the gravitational constant,
+  - $M$ is the mass of the celestial body,
+  - $R$ is the radius of the body.
 
 - **Physical Meaning**: At this speed, an object does not fall back to the planet because the gravitational pull is perfectly balanced by the centrifugal force of the circular motion. For Earth, this velocity is approximately **7.9 km/s**.
 
@@ -44,7 +44,7 @@ These cosmic velocities form the theoretical foundation for space missions, sate
 
 # Mathematical Analysis of Cosmic Velocities
 
-The three cosmic velocities are derived from classical mechanics and Newtonian gravity. Each velocity depends on fundamental parameters such as the gravitational constant ($ G $), the mass of the celestial body ($ M $), and the radial distance ($ R $) from its center.
+The three cosmic velocities are derived from classical mechanics and Newtonian gravity. Each velocity depends on fundamental parameters such as the gravitational constant ($G$), the mass of the celestial body ($M$), and the radial distance ($R$) from its center.
 
 ---
 
@@ -58,16 +58,16 @@ $$
 \frac{mv^2}{R} = \frac{GMm}{R^2}
 $$
 
-Canceling $ m $ and solving for $ v $:
+Canceling $m$ and solving for $v$:
 
 $$
 v_1 = \sqrt{\frac{GM}{R}}
 $$
 
 ### Parameters Affecting $ v_1 $:
-- **$ G $**: Universal constant, does not vary.
-- **$ M $**: A more massive body (like Jupiter) increases $ v_1 $.
-- **$ R $**: A higher orbit (larger $ R $) decreases $ v_1 $.
+- **$G$**: Universal constant, does not vary.
+- **$M$**: A more massive body (like Jupiter) increases $ v_1 $.
+- **$R$**: A higher orbit (larger $R$) decreases $v_1$.
 
 ---
 
@@ -81,16 +81,16 @@ $$
 \frac{1}{2}mv^2 = \frac{GMm}{R}
 $$
 
-Solving for $ v $:
+Solving for $v$:
 
 $$
 v_2 = \sqrt{\frac{2GM}{R}} = \sqrt{2} \cdot v_1
 $$
 
-### Parameters Affecting $ v_2 $:
-- Directly depends on $ M $ and inversely on $ R $.
-- Does **not** depend on the mass of the escaping object ($ m $ cancels out).
-- A denser planet (larger $ M $, smaller $ R $) yields a higher $ v_2 $.
+### Parameters Affecting $v_2$:
+- Directly depends on $M$ and inversely on $R$.
+- Does **not** depend on the mass of the escaping object ($m$ cancels out).
+- A denser planet (larger $M$, smaller $R$) yields a higher $v_2$.
 
 ---
 
@@ -104,13 +104,13 @@ $$
 v_3 = \sqrt{\frac{2GM_{\odot}}{r_{\text{Earth}}}} \approx 42.1 \, \text{km/s}
 $$
 
-However, Earth already moves at $ v_E \approx 29.8 \, \text{km/s} $ around the Sun. Therefore, the additional velocity needed from Earth’s surface is:
+However, Earth already moves at $v_E \approx 29.8 \, \text{km/s}$ around the Sun. Therefore, the additional velocity needed from Earth’s surface is:
 
 $$
 v_3 = \sqrt{v_{\text{esc}}^2 + v_{\infty}^2}
 $$
 
-Where $ v_{\text{esc}} \approx 11.2 \, \text{km/s} $ (from Earth) and $ v_{\infty} $ is the excess velocity at infinity required to escape the Sun.
+Where $v_{\text{esc}} \approx 11.2 \, \text{km/s}$ (from Earth) and $v_{\infty}$ is the excess velocity at infinity required to escape the Sun.
 
 ### Approximate Result:
 
@@ -120,10 +120,10 @@ $$
 
 (from Earth's surface, considering Earth’s orbital contribution).
 
-### Parameters Affecting $ v_3 $:
-- **$ M_{\odot} $** (mass of the Sun): Directly increases $ v_3 $.
-- **$ r_{\text{Earth}} $**: Distance from the Sun; farther planets need less additional speed to escape the solar system.
-- **Initial velocity relative to the Sun** (e.g., via gravitational slingshot) can reduce the fuel required to reach $ v_3 $.
+### Parameters Affecting $v_3$:
+- **$M_{\odot}$** (mass of the Sun): Directly increases $ v_3 $.
+- **$r_{\text{Earth}}$**: Distance from the Sun; farther planets need less additional speed to escape the solar system.
+- **Initial velocity relative to the Sun** (e.g., via gravitational slingshot) can reduce the fuel required to reach $v_3$.
 
 ---
 
@@ -131,9 +131,9 @@ $$
 
 | Velocity        | Formula                        | Depends On                  | Earth Value (approx.) |
 |-----------------|--------------------------------|------------------------------|------------------------|
-| $ v_1 $         | $ \sqrt{\frac{GM}{R}} $        | $ G $, $ M $, $ R $         | 7.9 km/s              |
-| $ v_2 $         | $ \sqrt{\frac{2GM}{R}} $       | $ G $, $ M $, $ R $         | 11.2 km/s             |
-| $ v_3 $         | *Complex; solar system escape* | $ G $, $ M_{\odot} $, $ r $ | 16.7 km/s             |
+| $v_1$         | $\sqrt{\frac{GM}{R}}$        | $G$, $M$, $R$         | 7.9 km/s              |
+| $v_2$         | $\sqrt{\frac{2GM}{R}}$       | $G$, $M$, $R$         | 11.2 km/s             |
+| $v_3$         | *Complex; solar system escape* | $G$, $M_{\odot}$, $r$ | 16.7 km/s             |
 
 ---
 
