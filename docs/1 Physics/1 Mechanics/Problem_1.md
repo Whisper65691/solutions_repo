@@ -232,11 +232,11 @@ These forces act opposite to the direction of motion and modify the differential
 
 - In the horizontal direction:
 
-  $$m\frac{dv_x}{dt} = -kv_x \quad \Rightarrow \quad v_x(t) = v_{0x} e^{-\frac{k}{m}t}$$
+$$m\frac{dv_x}{dt} = -kv_x \quad \Rightarrow \quad v_x(t) = v_{0x} e^{-\frac{k}{m}t}$$
 
 - In the vertical direction:
 
-  $$m\frac{dv_y}{dt} = -mg - kv_y$$
+$$m\frac{dv_y}{dt} = -mg - kv_y$$
 
 These equations usually require **numerical methods** for solutions.
 
