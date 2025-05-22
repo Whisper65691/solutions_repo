@@ -172,6 +172,39 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h1 id="simulating-sampling-distributions-to-demonstrate-the-central-limit-theorem">Simulating Sampling Distributions to Demonstrate the Central Limit Theorem</h1>
+<h2 id="objective">Objective</h2>
+<p>The Central Limit Theorem (CLT) states that the sampling distribution of the sample mean approaches a normal distribution as the sample size increases, regardless of the population’s original distribution. This simulation illustrates the CLT using several distinct population distributions.</p>
+<h2 id="step-by-step-plan">Step-by-Step Plan</h2>
+<h3 id="1-select-population-distributions">1. Select Population Distributions</h3>
+<p>We will use the following types of distributions:</p>
+<ul>
+<li><strong>Uniform Distribution</strong>: e.g., values uniformly distributed between 0 and 1.</li>
+<li><strong>Exponential Distribution</strong>: e.g., skewed distribution with rate parameter <span class="arithmatex">\(\lambda = 1\)</span>.</li>
+<li><strong>Binomial Distribution</strong>: e.g., number of successes in <span class="arithmatex">\(n = 10\)</span> trials with success probability <span class="arithmatex">\(p = 0.5\)</span>.</li>
+</ul>
+<h3 id="2-generate-large-populations">2. Generate Large Populations</h3>
+<p>For each distribution, generate a population of 100,000 data points to represent the underlying population.</p>
+<ul>
+<li>Uniform: <span class="arithmatex">\(U(0, 1)\)</span></li>
+<li>Exponential: <span class="arithmatex">\(Exp(\lambda = 1)\)</span></li>
+<li>Binomial: <span class="arithmatex">\(Bin(n = 10, p = 0.5)\)</span></li>
+</ul>
+<h3 id="3-perform-sampling">3. Perform Sampling</h3>
+<p>For each population:
+- Randomly draw samples of sizes: <span class="arithmatex">\(n = 5\)</span>, <span class="arithmatex">\(n = 30\)</span>, and <span class="arithmatex">\(n = 100\)</span>.
+- Repeat the sampling process 1000 times for each sample size.
+- Calculate the <strong>sample mean</strong> for each sample.</p>
+<h3 id="4-create-sampling-distributions">4. Create Sampling Distributions</h3>
+<p>For each sample size and each population type:
+- Plot the distribution of the sample means (sampling distribution).
+- Superimpose a normal distribution curve with the same mean and standard deviation.</p>
+<h3 id="5-expected-outcome">5. Expected Outcome</h3>
+<ul>
+<li>As <span class="arithmatex">\(n\)</span> increases, the sampling distribution of the mean becomes increasingly <strong>normal-shaped</strong>, regardless of whether the original population is uniform, exponential, or binomial.</li>
+<li>This provides a visual demonstration of the Central Limit Theorem.</li>
+</ul>
+<hr/>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
