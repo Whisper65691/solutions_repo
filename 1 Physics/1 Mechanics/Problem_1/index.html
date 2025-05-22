@@ -210,38 +210,24 @@ x(t) = v_0 \cos\theta \cdot t
 \frac{d^2y}{dt^2} = -g
 \]</div>
 <p>Integrate:</p>
-<div class="arithmatex">\[
-\frac{dy}{dt} = -gt + v_{0y} = -gt + v_0 \sin\theta
-\]</div>
-<div class="arithmatex">\[
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-\]</div>
+<div class="arithmatex">\[\frac{dy}{dt} = -gt + v_{0y} = -gt + v_0 \sin\theta\]</div>
+<div class="arithmatex">\[y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0\]</div>
 <hr/>
 <h2 id="3-trajectory-equation">3. Trajectory Equation</h2>
 <p>Eliminate <span class="arithmatex">\(t\)</span> using:</p>
-<div class="arithmatex">\[
-t = \frac{x}{v_0 \cos\theta}
-\]</div>
+<div class="arithmatex">\[t = \frac{x}{v_0 \cos\theta}\]</div>
 <p>Substitute into <span class="arithmatex">\(y(t)\)</span>:</p>
-<div class="arithmatex">\[
-y(x) = -\frac{g x^2}{2 v_0^2 \cos^2\theta} + x \tan\theta + h_0
-\]</div>
+<div class="arithmatex">\[y(x) = -\frac{g x^2}{2 v_0^2 \cos^2\theta} + x \tan\theta + h_0\]</div>
 <p>This is a parabolic equation.</p>
 <hr/>
 <h2 id="4-range-of-the-projectile">4. Range of the Projectile</h2>
 <p>Range <span class="arithmatex">\(R\)</span>: the horizontal distance when <span class="arithmatex">\(y = 0\)</span>
 Set vertical equation to zero:</p>
-<div class="arithmatex">\[
-0 = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-\]</div>
+<div class="arithmatex">\[0 = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0\]</div>
 <p>Solve for time of flight <span class="arithmatex">\(T\)</span>:</p>
-<div class="arithmatex">\[
-\frac{1}{2}gt^2 - v_0 \sin\theta \cdot t - h_0 = 0
-\]</div>
+<div class="arithmatex">\[\frac{1}{2}gt^2 - v_0 \sin\theta \cdot t - h_0 = 0\]</div>
 <p>Use positive root <span class="arithmatex">\(T\)</span>, then compute:</p>
-<div class="arithmatex">\[
-R = v_0 \cos\theta \cdot T
-\]</div>
+<div class="arithmatex">\[R = v_0 \cos\theta \cdot T\]</div>
 <hr/>
 <h2 id="5-influence-of-initial-conditions">5. Influence of Initial Conditions</h2>
 <p>Three parameters define the motion:</p>
@@ -278,16 +264,12 @@ R = v_0 \cos\theta \cdot T
 <hr/>
 <h2 id="3-influence-of-initial-velocity-v_0">3. Influence of Initial Velocity <span class="arithmatex">\(v_0\)</span></h2>
 <p>Range is <strong>quadratically proportional</strong> to the initial velocity:</p>
-<div class="arithmatex">\[
-R \propto v_0^2
-\]</div>
+<div class="arithmatex">\[R \propto v_0^2\]</div>
 <p>Doubling <span class="arithmatex">\(v_0\)</span> results in <strong>four times the range</strong>, assuming <span class="arithmatex">\(\theta\)</span> and <span class="arithmatex">\(g\)</span> remain constant.</p>
 <hr/>
 <h2 id="4-influence-of-gravitational-acceleration-g">4. Influence of Gravitational Acceleration <span class="arithmatex">\(g\)</span></h2>
 <p>Range is <strong>inversely proportional</strong> to gravitational acceleration:</p>
-<div class="arithmatex">\[
-R \propto \frac{1}{g}
-\]</div>
+<div class="arithmatex">\[R \propto \frac{1}{g}\]</div>
 <ul>
 <li>On planets with lower gravity (e.g., the Moon), the same projectile launched with the same <span class="arithmatex">\(v_0\)</span> and <span class="arithmatex">\(\theta\)</span> will travel <strong>farther</strong>.</li>
 <li>Conversely, on planets with stronger gravity, the range will be <strong>shorter</strong>.</li>
@@ -295,13 +277,9 @@ R \propto \frac{1}{g}
 <hr/>
 <h2 id="5-non-zero-launch-height-case">5. Non-Zero Launch Height Case</h2>
 <p>If the projectile is launched from a height <span class="arithmatex">\(h_0 \ne 0\)</span>, the formula becomes more complex. The time of flight <span class="arithmatex">\(T\)</span> is found by solving:</p>
-<div class="arithmatex">\[
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0 = 0
-\]</div>
+<div class="arithmatex">\[y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0 = 0\]</div>
 <p>Using the positive root of this quadratic gives <span class="arithmatex">\(T\)</span>, then:</p>
-<div class="arithmatex">\[
-R = v_0 \cos\theta \cdot T
-\]</div>
+<div class="arithmatex">\[R = v_0 \cos\theta \cdot T\]</div>
 <p>In this case:
 - The maximum range no longer occurs exactly at 45°.
 - It shifts slightly depending on <span class="arithmatex">\(h_0\)</span> and the relative contribution of vertical motion.</p>
@@ -342,13 +320,9 @@ R = v_0 \cos\theta \cdot T
 <p>In real life, projectiles are rarely launched and land on perfectly flat surfaces. For <strong>uneven terrain</strong>, the landing height differs from the launch height (<span class="arithmatex">\(h_0 \ne 0\)</span>).</p>
 <h3 id="adaptation">Adaptation:</h3>
 <p>Use the full vertical motion equation:</p>
-<div class="arithmatex">\[
-y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0
-\]</div>
+<div class="arithmatex">\[y(t) = -\frac{1}{2}gt^2 + v_0 \sin\theta \cdot t + h_0\]</div>
 <p>Set <span class="arithmatex">\(y(t) = h_f\)</span> (final height) and solve the resulting quadratic for <span class="arithmatex">\(t\)</span>. Then compute the range:</p>
-<div class="arithmatex">\[
-R = v_0 \cos\theta \cdot t
-\]</div>
+<div class="arithmatex">\[R = v_0 \cos\theta \cdot t\]</div>
 <h3 id="applications">Applications:</h3>
 <ul>
 <li><strong>Mountainous warfare</strong>: Artillery fired from or into elevated terrain.</li>
@@ -360,13 +334,9 @@ R = v_0 \cos\theta \cdot t
 <p>Air resistance (drag) significantly alters projectile behavior, especially at high speeds.</p>
 <h3 id="drag-force-model">Drag Force Model:</h3>
 <p>A common linear approximation for low-speed motion:</p>
-<div class="arithmatex">\[
-F_{\text{drag}} = -kv
-\]</div>
+<div class="arithmatex">\[F_{\text{drag}} = -kv\]</div>
 <p>Or for higher speeds (quadratic drag):</p>
-<div class="arithmatex">\[
-F_{\text{drag}} = -kv^2
-\]</div>
+<div class="arithmatex">\[F_{\text{drag}} = -kv^2\]</div>
 <p>These forces act opposite to the direction of motion and modify the differential equations:</p>
 <ul>
 <li>In the horizontal direction:</li>

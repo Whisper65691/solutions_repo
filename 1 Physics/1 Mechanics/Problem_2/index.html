@@ -175,9 +175,7 @@
 <h1 id="theoretical-foundation-forced-damped-pendulum">Theoretical Foundation — Forced Damped Pendulum</h1>
 <h2 id="1-governing-differential-equation">1. Governing Differential Equation</h2>
 <p>The motion of a forced damped pendulum is described by the nonlinear differential equation:</p>
-<div class="arithmatex">\[
-\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \sin\theta = A \cos(\omega t)
-\]</div>
+<div class="arithmatex">\[\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \sin\theta = A \cos(\omega t)\]</div>
 <p>Where:
 - <span class="arithmatex">\(\theta(t)\)</span>: Angular displacement
 - <span class="arithmatex">\(\gamma\)</span>: Damping coefficient
@@ -187,44 +185,30 @@
 <hr/>
 <h2 id="2-small-angle-approximation">2. Small-Angle Approximation</h2>
 <p>For small angles (<span class="arithmatex">\(\theta \ll 1\)</span>), we use the approximation:</p>
-<div class="arithmatex">\[
-\sin\theta \approx \theta
-\]</div>
+<div class="arithmatex">\[\sin\theta \approx \theta\]</div>
 <p>This linearizes the equation:</p>
-<div class="arithmatex">\[
-\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\omega t)
-\]</div>
+<div class="arithmatex">\[\frac{d^2\theta}{dt^2} + \gamma \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\omega t)\]</div>
 <p>This is the standard form of a <strong>driven damped harmonic oscillator</strong>.</p>
 <hr/>
 <h2 id="3-approximate-steady-state-solution">3. Approximate Steady-State Solution</h2>
 <p>Assume a steady-state solution of the form:</p>
-<div class="arithmatex">\[
-\theta(t) = B \cos(\omega t - \delta)
-\]</div>
+<div class="arithmatex">\[\theta(t) = B \cos(\omega t - \delta)\]</div>
 <p>Substituting into the linearized equation gives the amplitude:</p>
-<div class="arithmatex">\[
-B(\omega) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (\gamma \omega)^2}}
-\]</div>
+<div class="arithmatex">\[B(\omega) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (\gamma \omega)^2}}\]</div>
 <p>And the phase lag:</p>
-<div class="arithmatex">\[
-\tan\delta = \frac{\gamma \omega}{\omega_0^2 - \omega^2}
-\]</div>
+<div class="arithmatex">\[\tan\delta = \frac{\gamma \omega}{\omega_0^2 - \omega^2}\]</div>
 <hr/>
 <h2 id="4-resonance-and-energy-implications">4. Resonance and Energy Implications</h2>
 <h3 id="resonance-condition">Resonance Condition</h3>
 <p>Resonance occurs when the response amplitude is maximized:</p>
-<div class="arithmatex">\[
-\omega_{\text{res}} = \sqrt{\omega_0^2 - \frac{\gamma^2}{2}}
-\]</div>
+<div class="arithmatex">\[\omega_{\text{res}} = \sqrt{\omega_0^2 - \frac{\gamma^2}{2}}\]</div>
 <ul>
 <li>For weak damping (<span class="arithmatex">\(\gamma \ll \omega_0\)</span>), <span class="arithmatex">\(\omega_{\text{res}} \approx \omega_0\)</span></li>
 <li>At resonance, the system absorbs energy most efficiently from the driving force</li>
 </ul>
 <h3 id="energy-considerations">Energy Considerations</h3>
 <p>The average energy stored in the pendulum is proportional to:</p>
-<div class="arithmatex">\[
-\langle E \rangle \propto B^2(\omega)
-\]</div>
+<div class="arithmatex">\[\langle E \rangle \propto B^2(\omega)\]</div>
 <ul>
 <li><strong>Maximum energy</strong> occurs near the resonance frequency</li>
 <li><strong>Damping</strong> prevents runaway energy growth and stabilizes the system</li>
