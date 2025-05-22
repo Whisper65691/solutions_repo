@@ -172,6 +172,67 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h1 id="wave-interference-from-point-sources-on-water-surface">Wave Interference from Point Sources on Water Surface</h1>
+<p>A circular wave on the water surface, emanating from a point source located at <span class="arithmatex">\((x_0, y_0)\)</span>, can be described by the Single Disturbance equation:</p>
+<div class="arithmatex">\[
+\eta(x, y, t) = \frac{A}{\sqrt{r}} \cdot \cos (kr - \omega t + \phi)
+\]</div>
+<h3 id="where">Where:</h3>
+<ul>
+<li><span class="arithmatex">\(\eta(x, y, t)\)</span> is the displacement of the water surface at point <span class="arithmatex">\((x, y)\)</span> and time <span class="arithmatex">\(t\)</span>,</li>
+<li><span class="arithmatex">\(A\)</span> is the amplitude of the wave,</li>
+<li><span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span> is the wave number, related to the wavelength <span class="arithmatex">\(\lambda\)</span>,</li>
+<li><span class="arithmatex">\(\omega = 2\pi f\)</span> is the angular frequency, related to the frequency <span class="arithmatex">\(f\)</span>,</li>
+<li><span class="arithmatex">\(r = \sqrt{(x - x_0)^2 + (y - y_0)^2}\)</span> is the distance from the source to the point <span class="arithmatex">\((x, y)\)</span>,</li>
+<li><span class="arithmatex">\(\phi\)</span> is the initial phase.</li>
+</ul>
+<hr/>
+<h2 id="problem-statement">Problem Statement</h2>
+<p><strong>Your task</strong> is to analyze the interference patterns formed on the water surface due to the <strong>superposition of waves</strong> emitted from point sources placed at the <strong>vertices of a chosen regular polygon</strong>.</p>
+<hr/>
+<h2 id="steps-to-follow">Steps to Follow</h2>
+<h3 id="1-select-a-regular-polygon">1. Select a Regular Polygon</h3>
+<p>Choose a polygon with evenly spaced vertices:
+- Triangle (3 sources)
+- Square (4 sources)
+- Pentagon (5 sources)
+- etc.</p>
+<p>Let <span class="arithmatex">\(N\)</span> be the number of sides (and hence the number of sources).</p>
+<h3 id="2-position-the-sources">2. Position the Sources</h3>
+<p>Place each source at a vertex of a regular polygon inscribed in a circle of radius <span class="arithmatex">\(R\)</span> centered at the origin <span class="arithmatex">\((0, 0)\)</span>.</p>
+<p>Coordinates of the <span class="arithmatex">\(i\)</span>-th vertex (source):</p>
+<div class="arithmatex">\[
+(x_i, y_i) = \left(R \cos\left(\frac{2\pi i}{N}\right), R \sin\left(\frac{2\pi i}{N}\right)\right), \quad i = 0, 1, \ldots, N-1
+\]</div>
+<h3 id="3-wave-equations-for-each-source">3. Wave Equations for Each Source</h3>
+<p>Each point source emits a wave:</p>
+<div class="arithmatex">\[
+\eta_i(x, y, t) = \frac{A}{\sqrt{r_i}} \cdot \cos(k r_i - \omega t + \phi_i)
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2}\)</span>
+- <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(k\)</span>, <span class="arithmatex">\(\omega\)</span> are as defined earlier
+- <span class="arithmatex">\(\phi_i\)</span> is the phase offset (can be zero or varied)</p>
+<h3 id="4-superposition-of-waves">4. Superposition of Waves</h3>
+<p>Total wave displacement at any point <span class="arithmatex">\((x, y)\)</span> at time <span class="arithmatex">\(t\)</span> is:</p>
+<div class="arithmatex">\[
+\eta_{\text{sum}}(x, y, t) = \sum_{i=1}^{N} \eta_i(x, y, t)
+\]</div>
+<hr/>
+<h2 id="analyze-and-visualize">Analyze and Visualize</h2>
+<h3 id="1-analyze-interference-patterns">1. Analyze Interference Patterns</h3>
+<p>Examine the resulting displacement <span class="arithmatex">\(\eta_{\text{sum}}(x, y, t)\)</span> as a function of <span class="arithmatex">\((x, y)\)</span> and <span class="arithmatex">\(t\)</span>.
+- Look for <strong>constructive interference</strong> (wave amplification)
+- Identify <strong>destructive interference</strong> (wave cancellation)</p>
+<h3 id="2-visualization">2. Visualization</h3>
+<p>Present your findings graphically to illustrate the interference patterns formed by the chosen regular polygon.</p>
+<hr/>
+<h2 id="considerations">Considerations</h2>
+<ul>
+<li>Assume all sources emit waves with the same amplitude <span class="arithmatex">\(A\)</span>, wavelength <span class="arithmatex">\(\lambda\)</span>, and frequency <span class="arithmatex">\(f\)</span>.</li>
+<li>The waves are <strong>coherent</strong>, maintaining a constant phase difference.</li>
+<li>Use simulation tools like <strong>Python + Matplotlib</strong> or similar graphical tools to assist with your analysis and visualization.</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
