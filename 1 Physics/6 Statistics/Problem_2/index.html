@@ -172,6 +172,48 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h1 id="estimating-pi-using-monte-carlo-methods">Estimating <span class="arithmatex">\(\pi\)</span> Using Monte Carlo Methods</h1>
+<h2 id="1-theoretical-foundation">1. Theoretical Foundation:</h2>
+<ul>
+<li>Explain how the ratio of points inside a circle to the total number of points in a square can be used to estimate <span class="arithmatex">\(\pi\)</span>.  </li>
+<li>Derive the formula <span class="arithmatex">\(<span class="arithmatex">\(\pi \approx 4 \cdot \left( \frac{\text{points inside the circle}}{\text{total points}} \right)\)</span>\)</span> for a unit circle.</li>
+</ul>
+<h2 id="2-simulation">2. Simulation:</h2>
+<ul>
+<li>Generate random points in a 2D square bounding a unit circle.  </li>
+<li>Count the number of points falling inside the circle.  </li>
+<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the ratio of points inside the circle to the total points.</li>
+</ul>
+<h2 id="3-visualization">3. Visualization:</h2>
+<p><img alt="alt text" src="../image-12.png"/></p>
+<p><img alt="alt text" src="../image-13.png"/></p>
+<p><img alt="alt text" src="../image-14.png"/></p>
+<h2 id="4-analysis">4. Analysis:</h2>
+<ul>
+<li>Investigate how the accuracy of the estimate improves as the number of points increases.  </li>
+<li>Discuss the convergence rate and computational considerations for this method.</li>
+</ul>
+<h1 id="part-2-estimating-pi-using-buffons-needle">PART 2: ESTIMATING <span class="arithmatex">\(\pi\)</span> USING BUFFON'S NEEDLE</h1>
+<h2 id="1-theoretical-foundation_1">1. Theoretical Foundation:</h2>
+<ul>
+<li>Describe Buffon's Needle problem, where <span class="arithmatex">\(\pi\)</span> can be estimated based on the probability of a needle crossing parallel lines on a plane.  </li>
+<li>Derive the formula:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(\pi \approx \frac{2 \cdot \text{needle length} \cdot \text{number of throws}}{\text{distance between lines} \cdot \text{number of crosses}}\)</span>\)</span> </li>
+</ul>
+<h2 id="2-simulation_1">2. Simulation:</h2>
+<ul>
+<li>Simulate the random dropping of a needle on a plane with parallel lines.  </li>
+<li>Count the number of times the needle crosses a line.  </li>
+<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the derived formula.  </li>
+</ul>
+<h2 id="3-visualization_1">3. Visualization:</h2>
+<p><img alt="alt text" src="../image-15.png"/> </p>
+<p><img alt="alt text" src="../image-16.png"/></p>
+<h2 id="4-analysis_1">4. Analysis:</h2>
+<ul>
+<li>Explore how the number of needle drops affects the estimate's accuracy.  </li>
+<li>Compare the convergence rate of this method to the circle-based approach.  </li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
