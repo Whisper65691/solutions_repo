@@ -88,3 +88,7 @@ Present your findings graphically to illustrate the interference patterns formed
 ## Visualization
 
 ![image](download.gif)
+
+## Colab
+
+[visit my colab](https://colab.research.google.com/drive/17KVWGFI514gB0WrxB1A9L_ATId5RwJIg?usp=sharing)
