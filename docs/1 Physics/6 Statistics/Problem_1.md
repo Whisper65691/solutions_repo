@@ -60,21 +60,33 @@ For each population:
 ## Visualization
 
 Population: Uniform(0,1)
+
 ![alt text](image.png)
+
 ![alt text](image-3.png)
+
 ![alt text](image-4.png)
+
 ![alt text](image-5.png)
 
 Population: Exponential(λ=1)
+
 ![alt text](image-2.png)
+
 ![alt text](image-6.png)
+
 ![alt text](image-7.png)
+
 ![alt text](image-8.png)
 
 Population: Binomial(n=10, p=0.5)
+
 ![alt text](image-1.png)
+
 ![alt text](image-9.png)
+
 ![alt text](image-10.png)
+
 ![alt text](image-11.png)
 
 ## Colab
