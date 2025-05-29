@@ -172,39 +172,86 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<h1 id="simulating-sampling-distributions-to-demonstrate-the-central-limit-theorem">Simulating Sampling Distributions to Demonstrate the Central Limit Theorem</h1>
-<h2 id="objective">Objective</h2>
-<p>The Central Limit Theorem (CLT) states that the sampling distribution of the sample mean approaches a normal distribution as the sample size increases, regardless of the population’s original distribution. This simulation illustrates the CLT using several distinct population distributions.</p>
-<h2 id="step-by-step-plan">Step-by-Step Plan</h2>
-<h3 id="1-select-population-distributions">1. Select Population Distributions</h3>
-<p>We will use the following types of distributions:</p>
+<h1 id="simulating-the-central-limit-theorem-clt">Simulating the Central Limit Theorem (CLT)</h1>
+<h2 id="1-population-distributions">1. Population Distributions</h2>
+<p>Select several types of population distributions to observe how the Central Limit Theorem (CLT) applies across different shapes:</p>
 <ul>
-<li><strong>Uniform Distribution</strong>: e.g., values uniformly distributed between 0 and 1.</li>
-<li><strong>Exponential Distribution</strong>: e.g., skewed distribution with rate parameter <span class="arithmatex">\(\lambda = 1\)</span>.</li>
-<li><strong>Binomial Distribution</strong>: e.g., number of successes in <span class="arithmatex">\(n = 10\)</span> trials with success probability <span class="arithmatex">\(p = 0.5\)</span>.</li>
+<li><strong>Uniform distribution</strong></li>
+<li><strong>Exponential distribution</strong></li>
+<li><strong>Binomial distribution</strong></li>
 </ul>
-<h3 id="2-generate-large-populations">2. Generate Large Populations</h3>
-<p>For each distribution, generate a population of 100,000 data points to represent the underlying population.</p>
+<p>For each distribution, generate a large dataset (e.g., 100,000 data points) to represent the population.</p>
+<hr/>
+<h2 id="2-sampling-and-visualization">2. Sampling and Visualization</h2>
+<p>For each population:</p>
 <ul>
-<li>Uniform: <span class="arithmatex">\(U(0, 1)\)</span></li>
-<li>Exponential: <span class="arithmatex">\(Exp(\lambda = 1)\)</span></li>
-<li>Binomial: <span class="arithmatex">\(Bin(n = 10, p = 0.5)\)</span></li>
+<li>Randomly sample data and calculate the <strong>sample mean</strong> for different sample sizes:</li>
+<li>Sample sizes: 5, 10, 30, 50</li>
+<li>Repeat the sampling process (e.g., 1,000 times) to build a <strong>sampling distribution of the sample mean</strong></li>
+<li>Plot <strong>histograms</strong> of the sample means for each sample size to observe convergence to a normal distribution</li>
 </ul>
-<h3 id="3-perform-sampling">3. Perform Sampling</h3>
-<p>For each population:
-- Randomly draw samples of sizes: <span class="arithmatex">\(n = 5\)</span>, <span class="arithmatex">\(n = 30\)</span>, and <span class="arithmatex">\(n = 100\)</span>.
-- Repeat the sampling process 1000 times for each sample size.
-- Calculate the <strong>sample mean</strong> for each sample.</p>
-<h3 id="4-create-sampling-distributions">4. Create Sampling Distributions</h3>
-<p>For each sample size and each population type:
-- Plot the distribution of the sample means (sampling distribution).
-- Superimpose a normal distribution curve with the same mean and standard deviation.</p>
-<h3 id="5-expected-outcome">5. Expected Outcome</h3>
+<blockquote>
+<p>Observe how the shape of the sampling distribution becomes more bell-shaped (normal) as sample size increases.</p>
+</blockquote>
+<hr/>
+<h2 id="3-parameter-exploration">3. Parameter Exploration</h2>
 <ul>
-<li>As <span class="arithmatex">\(n\)</span> increases, the sampling distribution of the mean becomes increasingly <strong>normal-shaped</strong>, regardless of whether the original population is uniform, exponential, or binomial.</li>
-<li>This provides a visual demonstration of the Central Limit Theorem.</li>
+<li><strong>Shape Influence</strong>: Compare how the original population shape affects convergence:</li>
+<li>Uniform converges quickly</li>
+<li>Exponential (skewed) converges slower</li>
+<li>
+<p>Binomial depends on <span class="arithmatex">\(n\)</span> and <span class="arithmatex">\(p\)</span></p>
+</li>
+<li>
+<p><strong>Sample Size Influence</strong>: Larger samples yield sampling distributions closer to normal</p>
+</li>
+<li>
+<p><strong>Variance Effect</strong>:</p>
+</li>
+<li>Recall the standard deviation of the sampling distribution is:
+    $$ \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} $$</li>
+<li>Larger population variance <span class="arithmatex">\(\sigma^2\)</span> leads to wider sampling distributions</li>
+<li>Increasing <span class="arithmatex">\(n\)</span> reduces the spread due to the denominator <span class="arithmatex">\(\sqrt{n}\)</span></li>
 </ul>
 <hr/>
+<h2 id="4-practical-applications-of-the-clt">4. Practical Applications of the CLT</h2>
+<ul>
+<li><strong>Estimating Population Parameters</strong>:</li>
+<li>
+<p>Enables construction of confidence intervals and hypothesis tests</p>
+</li>
+<li>
+<p><strong>Quality Control</strong>:</p>
+</li>
+<li>
+<p>Used in process monitoring with control charts</p>
+</li>
+<li>
+<p><strong>Finance and Risk Modeling</strong>:</p>
+</li>
+<li>Underpins models that assume normality of returns or residuals</li>
+</ul>
+<blockquote>
+<p>The CLT justifies the widespread use of the normal distribution in statistical inference, even when the data itself is not normally distributed.</p>
+</blockquote>
+<h2 id="visualization">Visualization</h2>
+<p>Population: Uniform(0,1)
+<img alt="alt text" src="../image.png"/>
+<img alt="alt text" src="../image-3.png"/>
+<img alt="alt text" src="../image-4.png"/>
+<img alt="alt text" src="../image-5.png"/></p>
+<p>Population: Exponential(λ=1)
+<img alt="alt text" src="../image-2.png"/>
+<img alt="alt text" src="../image-6.png"/>
+<img alt="alt text" src="../image-7.png"/>
+<img alt="alt text" src="../image-8.png"/></p>
+<p>Population: Binomial(n=10, p=0.5)
+<img alt="alt text" src="../image-1.png"/>
+<img alt="alt text" src="../image-9.png"/>
+<img alt="alt text" src="../image-10.png"/>
+<img alt="alt text" src="../image-11.png"/></p>
+<h2 id="colab">Colab</h2>
+<p><a href="https://colab.research.google.com/drive/1PQEwtp6Q4Bm_-ckv-XRlxrCeSY__NrRl?usp=sharing">Visit my colab</a></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
