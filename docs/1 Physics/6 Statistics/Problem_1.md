@@ -38,7 +38,7 @@ For each population:
 
 - **Variance Effect**:
   - Recall the standard deviation of the sampling distribution is:
-    $$ \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} $$
+    $$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
   - Larger population variance $\sigma^2$ leads to wider sampling distributions
   - Increasing $n$ reduces the spread due to the denominator $\sqrt{n}$
 
