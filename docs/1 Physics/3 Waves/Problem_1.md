@@ -85,3 +85,6 @@ Present your findings graphically to illustrate the interference patterns formed
 - Use simulation tools like **Python + Matplotlib** or similar graphical tools to assist with your analysis and visualization.
 
 
+## Visualization
+
+![image](download.gif)
