@@ -61,6 +61,8 @@ Together, these fields allow precise control over the trajectories, speeds, and 
 
 ![alt text](image-3.png)
 
+![alt text](image-10.png)
+
 ## 🔍 Parameter Exploration
 
 Explore how varying the **electric field ($\mathbf{E}$)**, **magnetic field ($\mathbf{B}$)**, **initial velocity ($\mathbf{v}_0$)**, and particle **charge ($q$)** and **mass ($m$)** influences the trajectory of a charged particle under the Lorentz force.
