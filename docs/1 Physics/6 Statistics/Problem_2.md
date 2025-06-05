@@ -46,7 +46,8 @@
 
 ![alt text](image-16.png)
 
-## 4. Analysis:
+![alt text](image-17.png)
 
-- Explore how the number of needle drops affects the estimate's accuracy.  
-- Compare the convergence rate of this method to the circle-based approach.  
+## Google Colab
+
+[Visit my Colab](https://colab.research.google.com/drive/1BPYihD306dbP_ruj0Gqjsj4ig9i8wRMC?usp=sharing)
