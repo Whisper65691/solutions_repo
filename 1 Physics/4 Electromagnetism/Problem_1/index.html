@@ -72,6 +72,32 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#key-systems-where-the-lorentz-force-plays-a-crucial-role">Key Systems Where the Lorentz Force Plays a Crucial Role</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-particle-accelerators">1. Particle Accelerators</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#2-mass-spectrometers">2. Mass Spectrometers</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#3-plasma-confinement-in-fusion-reactors">3. Plasma Confinement in Fusion Reactors</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#role-of-electric-and-magnetic-fields">Role of Electric and Magnetic Fields</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#parameter-exploration">🔍 Parameter Exploration</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#governing-equation">💡 Governing Equation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters-to-vary">🔁 Parameters to Vary</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#observational-outcomes">🧪 Observational Outcomes</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#google-colab">Google Colab</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +198,147 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h2 id="key-systems-where-the-lorentz-force-plays-a-crucial-role">Key Systems Where the Lorentz Force Plays a Crucial Role</h2>
+<p>The Lorentz force, described by the equation</p>
+<div class="arithmatex">\[
+\mathbf{F} = q\mathbf{E} + q\mathbf{v} \times \mathbf{B}
+\]</div>
+<p>is central to many physical systems and technologies. It governs the motion of charged particles under the influence of electric (<span class="arithmatex">\(\mathbf{E}\)</span>) and magnetic (<span class="arithmatex">\(\mathbf{B}\)</span>) fields. Below are some systems where this force is especially critical:</p>
+<h3 id="1-particle-accelerators">1. Particle Accelerators</h3>
+<p>In particle accelerators such as synchrotrons and cyclotrons, the Lorentz force is used to steer and accelerate particles. </p>
+<ul>
+<li><strong>Electric fields (<span class="arithmatex">\(\mathbf{E}\)</span>)</strong> are responsible for accelerating the charged particles.</li>
+<li><strong>Magnetic fields (<span class="arithmatex">\(\mathbf{B}\)</span>)</strong> are used to bend and focus the particle beams along desired paths.</li>
+</ul>
+<p>This interplay enables particles to reach high velocities and collide at controlled points for high-energy physics experiments.</p>
+<h3 id="2-mass-spectrometers">2. Mass Spectrometers</h3>
+<p>Mass spectrometers use the Lorentz force to separate ions based on their mass-to-charge ratio (<span class="arithmatex">\(m/q\)</span>). </p>
+<ul>
+<li>Particles enter a region with a magnetic field <span class="arithmatex">\(\mathbf{B}\)</span> and are deflected in circular paths.</li>
+<li>The radius of the path depends on the particle’s velocity, charge, and mass:</li>
+</ul>
+<p>$$
+  r = \frac{mv}{qB}
+  $$</p>
+<ul>
+<li>By measuring this radius, the system identifies and characterizes different ions in a sample.</li>
+</ul>
+<h3 id="3-plasma-confinement-in-fusion-reactors">3. Plasma Confinement in Fusion Reactors</h3>
+<p>In devices like <strong>tokamaks</strong> and <strong>stellarators</strong>, magnetic fields are used to confine high-temperature plasma.</p>
+<ul>
+<li><strong>Charged particles spiral</strong> around magnetic field lines due to the <span class="arithmatex">\(q\mathbf{v} \times \mathbf{B}\)</span> component.</li>
+<li>Electric fields may be applied to induce additional control or heating.</li>
+</ul>
+<p>This confinement is essential to sustain the conditions necessary for nuclear fusion.</p>
+<hr/>
+<h2 id="role-of-electric-and-magnetic-fields">Role of Electric and Magnetic Fields</h2>
+<ul>
+<li><strong>Electric Field (<span class="arithmatex">\(\mathbf{E}\)</span>):</strong> </li>
+<li>Directly accelerates charged particles in a straight line.</li>
+<li>
+<p>Responsible for energy gain and directional control.</p>
+</li>
+<li>
+<p><strong>Magnetic Field (<span class="arithmatex">\(\mathbf{B}\)</span>):</strong></p>
+</li>
+<li>Does not do work but changes the particle’s direction.</li>
+<li>Causes circular or helical motion, crucial for confinement and steering.</li>
+</ul>
+<p>Together, these fields allow precise control over the trajectories, speeds, and energies of charged particles in various applications.</p>
+<p><img alt="alt text" src="../image-1.png"/></p>
+<p><img alt="alt text" src="../image-2.png"/></p>
+<p><img alt="alt text" src="../image-3.png"/></p>
+<h2 id="parameter-exploration">🔍 Parameter Exploration</h2>
+<p>Explore how varying the <strong>electric field (<span class="arithmatex">\(\mathbf{E}\)</span>)</strong>, <strong>magnetic field (<span class="arithmatex">\(\mathbf{B}\)</span>)</strong>, <strong>initial velocity (<span class="arithmatex">\(\mathbf{v}_0\)</span>)</strong>, and particle <strong>charge (<span class="arithmatex">\(q\)</span>)</strong> and <strong>mass (<span class="arithmatex">\(m\)</span>)</strong> influences the trajectory of a charged particle under the Lorentz force.</p>
+<hr/>
+<h3 id="governing-equation">💡 Governing Equation</h3>
+<p>The motion of a charged particle is governed by the Lorentz force:</p>
+<div class="arithmatex">\[
+\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})
+\]</div>
+<p>This force results in acceleration given by Newton's second law:</p>
+<div class="arithmatex">\[
+\mathbf{a} = \frac{\mathbf{F}}{m} = \frac{q}{m}(\mathbf{E} + \mathbf{v} \times \mathbf{B})
+\]</div>
+<hr/>
+<h3 id="parameters-to-vary">🔁 Parameters to Vary</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Description</th>
+<th>Effect on Trajectory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electric field</td>
+<td><span class="arithmatex">\(\mathbf{E}\)</span></td>
+<td>Direction and strength of field</td>
+<td>Causes linear acceleration along <span class="arithmatex">\(\mathbf{E}\)</span></td>
+</tr>
+<tr>
+<td>Magnetic field</td>
+<td><span class="arithmatex">\(\mathbf{B}\)</span></td>
+<td>Direction and strength of field</td>
+<td>Causes circular or helical motion perpendicular to <span class="arithmatex">\(\mathbf{B}\)</span></td>
+</tr>
+<tr>
+<td>Initial velocity</td>
+<td><span class="arithmatex">\(\mathbf{v}_0\)</span></td>
+<td>Starting speed and direction</td>
+<td>Determines initial energy and pitch of helical motion</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td><span class="arithmatex">\(q\)</span></td>
+<td>Sign and magnitude of charge</td>
+<td>Affects force direction (sign) and magnitude</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td><span class="arithmatex">\(m\)</span></td>
+<td>Inertia of the particle</td>
+<td>Higher mass reduces acceleration under same force</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h3 id="observational-outcomes">🧪 Observational Outcomes</h3>
+<ul>
+<li><strong>Increasing <span class="arithmatex">\(|\mathbf{B}|\)</span></strong> tightens the radius of circular motion:</li>
+</ul>
+<p>$$
+  r = \frac{mv_\perp}{qB}
+  $$</p>
+<ul>
+<li>
+<p><strong>Increasing <span class="arithmatex">\(|\mathbf{E}|\)</span></strong> increases linear acceleration along the field direction.</p>
+</li>
+<li>
+<p><strong>Changing <span class="arithmatex">\(q\)</span> sign</strong> reverses the direction of gyration or drift.</p>
+</li>
+<li>
+<p><strong>Reducing <span class="arithmatex">\(m\)</span></strong> results in quicker response to field changes (higher acceleration).</p>
+</li>
+<li>
+<p><strong>Crossed Fields (<span class="arithmatex">\(\mathbf{E} \perp \mathbf{B}\)</span>)</strong> lead to drift motion with constant velocity:</p>
+</li>
+</ul>
+<p>$$
+  \mathbf{v}_{\text{drift}} = \frac{\mathbf{E} \times \mathbf{B}}{B^2}
+  $$</p>
+<hr/>
+<h3 id="visualization">Visualization</h3>
+<p><img alt="alt text" src="../image-4.png"/></p>
+<p><img alt="alt text" src="../image-5.png"/></p>
+<p><img alt="alt text" src="../image-6.png"/></p>
+<p><img alt="alt text" src="../image-7.png"/></p>
+<p><img alt="alt text" src="../image-8.png"/></p>
+<p><img alt="alt text" src="../image-9.png"/></p>
+<h2 id="google-colab">Google Colab</h2>
+<p><a href="https://colab.research.google.com/drive/1lUl-CljO9X4lzOJ98iXc_qiuS8wRgkmJ?usp=sharing">Visit my Colab</a></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
